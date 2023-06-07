@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.soilanalyzer.Home"
+        android:label="@string/menuHomeText"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeFragment_to_SoilAnalyzeScreenFragment"
+            app:destination="@id/SoilDataScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SoilDataScreenFragment"
+        android:name="com.example.soilanalyzer.SoilDataScreen"
+        android:label="@string/soilAnalyzerScreenTitle"
+        tools:layout="@layout/fragment_soil_data_screen">
+        <action
+            android:id="@+id/action_SoilAnalyzeScreenFragment_to_SettingsFragment"
+            app:destination="@id/SettingsFragment" />
+        <action
+            android:id="@+id/action_SoilAnalyzeScreenFragment_to_InfoFragment"
+            app:destination="@id/InfoFragment" />
+        <action
+            android:id="@+id/action_SoilAnalyzeScreenFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.example.soilanalyzer.Settings"
+        android:label="@string/SettingsTitle"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_SettingsFragment_to_SoilAnalyzeScreenFragment"
+            app:destination="@id/SoilDataScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/InfoFragment"
+        android:name="com.example.soilanalyzer.Info"
+        android:label="@string/InfoTitle"
+        tools:layout="@layout/fragment_info">
+        <action
+            android:id="@+id/action_InfoFragment_to_SoilAnalyzeScreenFragment"
+            app:destination="@id/SoilDataScreenFragment" />
+    </fragment>
+</navigation>

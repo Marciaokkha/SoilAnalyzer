@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary"
+    tools:context=".SoilDataScreen">
+
+    <TextView
+        android:id="@+id/soilDataScreenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/soilAnalyzerScreenTitle"
+        android:textColor="?colorOnPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pHCard"
+        app:cardBackgroundColor="?colorSecondary"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soilDataScreenTitle"
+        style="@style/SoilAnalyzerScreenCard">
+
+        <ImageView
+            android:id="@+id/pHImage"
+            android:src="@drawable/baseline_science_24"
+            style="@style/SoilAnalyzerScreenIcons" />
+
+        <LinearLayout style="@style/SoilAnalyzerScreenLLs">
+
+            <TextView
+                android:id="@+id/pHTitle"
+                android:text="@string/soilAnalyzerScreenPh"
+                style="@style/SoilAnalyzerScreenTexts" />
+
+            <TextView
+                android:id="@+id/pHProgressText"
+                android:text=" 0"
+                style="@style/SoilAnalyzerScreenTexts" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/pHBar"
+            style="@style/SoilAnalyzerScreenSBs"
+            android:max="14"
+            android:min="0"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/temperatureCard"
+        app:cardBackgroundColor="?colorSecondary"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pHCard"
+        style="@style/SoilAnalyzerScreenCard">
+
+        <ImageView
+            android:id="@+id/temperatureImage"
+            android:src="@drawable/baseline_thermostat_24"
+            style="@style/SoilAnalyzerScreenIcons" />
+
+        <LinearLayout style="@style/SoilAnalyzerScreenLLs">
+
+            <TextView
+                android:id="@+id/temperatureTitle"
+                android:text="@string/soilAnalyzerScreenTemperature"
+                style="@style/SoilAnalyzerScreenTexts" />
+
+            <TextView
+                android:id="@+id/temperatureProgressText"
+                android:text=" 20°C"
+                style="@style/SoilAnalyzerScreenTexts" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/temperatureBar"
+            style="@style/SoilAnalyzerScreenSBs"
+            android:max="1"
+            android:min="0"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/moistureCard"
+        app:cardBackgroundColor="?colorSecondary"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureCard"
+        style="@style/SoilAnalyzerScreenCard">
+
+        <ImageView
+            android:id="@+id/moistureImage"
+            android:src="@drawable/baseline_water_drop_24"
+            style="@style/SoilAnalyzerScreenIcons" />
+
+        <LinearLayout style="@style/SoilAnalyzerScreenLLs">
+
+            <TextView
+                android:id="@+id/moistureTitle"
+                android:text="@string/soilAnalyzerScreenMoisture"
+                style="@style/SoilAnalyzerScreenTexts" />
+
+            <TextView
+                android:id="@+id/moistureProgressText"
+                android:text=" 0%"
+                style="@style/SoilAnalyzerScreenTexts" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/moistureBar"
+            style="@style/SoilAnalyzerScreenSBs"
+            android:max="100"
+            android:min="0"
+            android:progress="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonStartAnalyze"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/soilAnalyzerScreenButtonText"
+        app:cornerRadius="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moistureCard" />
+
+    <TextView
+        android:id="@+id/soilAnalyzedText"
+        style="@style/SoilAnalyzerScreenTexts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/soilAnalyzerScreenTitleResults"
+        android:textColor="?colorOnPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStartAnalyze" />
+</androidx.constraintlayout.widget.ConstraintLayout>

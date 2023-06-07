@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/SoilDataScreenFragment"
+        android:enabled="true"
+        android:icon="@drawable/baseline_leaf_24"
+        android:title="@string/soilAnalyzerScreenTitle"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/SettingsFragment"
+        android:enabled="true"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/SettingsTitle"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/InfoFragment"
+        android:enabled="true"
+        android:icon="@drawable/baseline_info_24"
+        android:title="@string/InfoTitle"
+        app:showAsAction="ifRoom"/>
+</menu>

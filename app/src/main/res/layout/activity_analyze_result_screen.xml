@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorPrimary"
+    tools:context=".AnalyzeResultScreen">
+
+    <TextView
+        android:id="@+id/resultScreenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/ResultScreenTitle"
+        android:textColor="?colorOnPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pHResultCard"
+        app:cardBackgroundColor="?colorSecondary"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultScreenTitle"
+        style="@style/ResultCard">
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/ResultCardLLVertical">
+
+            <TextView
+                android:id="@+id/pHResultText"
+                style="@style/ResultCardTexts"
+                android:text="@string/ResultScreenCardPHText" />
+
+            <LinearLayout style="@style/ResultCardLLHorizontal">
+
+                <TextView
+                    android:id="@+id/pHCurrentTitle"
+                    style="@style/ResultCardTexts"
+                    android:text="@string/ResultScreenCardPHCurrentText" />
+
+                <TextView
+                    android:id="@+id/phCurrentValueText"
+                    android:text="0"
+                    style="@style/ResultCardTexts" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultCardLLHorizontal">
+
+                <TextView
+                    android:id="@+id/phActionTitle"
+                    android:text="@string/ResultScreenCardActionText"
+                    style="@style/ResultCardTexts" />
+
+                <TextView
+                    android:id="@+id/phActionValueText"
+                    android:text="N/A"
+                    style="@style/ResultCardTexts" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/temperatureResultCard"
+        app:cardBackgroundColor="?colorSecondary"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pHResultCard"
+        style="@style/ResultCard">
+
+        <LinearLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/ResultCardLLVertical">
+
+            <TextView
+                android:id="@+id/temperatureResultText"
+                style="@style/ResultCardTexts"
+                android:text="@string/ResultScreenCardMoistureTitle" />
+
+            <LinearLayout style="@style/ResultCardLLHorizontal">
+
+                <TextView
+                    android:id="@+id/temperatureCurrentTitle"
+                    style="@style/ResultCardTexts"
+                    android:text="@string/ResultScreenCardTemperatureCurrentText" />
+
+                <TextView
+                    android:id="@+id/temperatureCurrentValueText"
+                    style="@style/ResultCardTexts"
+                    android:text="0°C" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultCardLLHorizontal">
+
+                <TextView
+                    android:id="@+id/moistureCurrentTitle"
+                    style="@style/ResultCardTexts"
+                    android:text="@string/ResultScreenCardMoistureCurrentText" />
+
+                <TextView
+                    android:id="@+id/moistureCurrentValueText"
+                    style="@style/ResultCardTexts"
+                    android:text="0%" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ResultCardLLHorizontal">
+
+                <TextView
+                    android:id="@+id/temperatureActionTitle"
+                    android:text="@string/ResultScreenCardActionText"
+                    style="@style/ResultCardTexts" />
+
+                <TextView
+                    android:id="@+id/temperatureActionValueText"
+                    android:text="N/A"
+                    style="@style/ResultCardTexts" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonResultScreen"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:text="@string/ResultScreenCardButtonText"
+        app:cornerRadius="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureResultCard" />
+</androidx.constraintlayout.widget.ConstraintLayout>

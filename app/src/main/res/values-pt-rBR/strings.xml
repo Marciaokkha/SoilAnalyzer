@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_title">ANALISADOR DE SOLO</string>
+    <string name="home_button_text">VAMOS INICIAR!</string>
+    <string name="soilAnalyzerScreenTitle">Informações do Solo</string>
+    <string name="soilAnalyzerScreenPh">Escala de PH do Solo: </string>
+    <string name="soilAnalyzerScreenTemperature">Temperatura do Solo: </string>
+    <string name="soilAnalyzerScreenMoisture">Umidade do Solo: </string>
+    <string name="soilAnalyzerScreenButtonText">ANALISAR</string>
+    <string name="soilAnalyzerScreenTitleResults">Resultados da análise do solo:</string>
+    <string name="ResultScreenTitle">Resultado da análise do Solo</string>
+    <string name="ResultScreenCardPHText">Um PH ideal é um valor entre 6 e 8.</string>
+    <string name="ResultScreenCardPHCurrentText">PH atual do solo:</string>
+    <string name="ResultScreenCardActionText">Ação:</string>
+    <string name="ResultScreenCardMoistureTitle">Quanto maior a temperatura do solo, maior deve ser a umidade do solo.</string>
+    <string name="ResultScreenCardTemperatureCurrentText">Temperatura atual do solo:</string>
+    <string name="ResultScreenCardMoistureCurrentText">Umidade atual do solo:</string>
+    <string name="ResultScreenCardButtonText">Voltar</string>
+
+    <string name="ph_ok">O nível atual do PH está excelente.</string>
+    <string name="ph_not_ok">O nível atual do PH não é o ideal, considere tratar o solo.</string>
+    <string name="moisture_ok">A umidade perante a temperatura está exclente.</string>
+    <string name="moistureTeperature_not_ok">A umidade perante a temperatura não está boa,
+        isso pode ressecar a plantação, considere irrigar a terra.</string>
+    <string name="moisture_not_ok">O nível de umidade está baixo, considere irrigar a plantação.</string>
+
+    <string name="SettingsTitle">Configurações</string>
+    <string name="ThemeSettingsText">Configurações de Tema</string>
+    <string name="SettingAlternativeThemeText">Tema Alternativo</string>
+
+    <string name="menuHomeText">Início</string>
+
+    <string name="InfoTitle">Informações</string>
+    <string name="projectInfoText">Esse projeto foi pensado para coletar informações de sensores de solo, e apontar a qualidade do mesmo.
+        \n\nNo primeiro instante a entrada de dados é manual.
+        \n\nBem como a análise do solo (Que está mockada), mas isso pode ser feito futuramento com I.A e Machine Learning.</string>
+    <string name="IntegrantsText">Desenvolvedores:\n\nFelipe Nunes Pereira Leite RM:88254\nGilberto Moreira Santos Junior RM:88682\nMarcio Yukio Takarabe RM:86662 \n\nTurma: 3SIR - 2023</string>
+
+</resources>

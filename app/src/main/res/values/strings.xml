@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">SoilAnalyzer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="home_title">SOIL ANALYZER</string>
+    <string name="home_button_text">Let\'s Start!</string>
+    <string name="soilAnalyzerScreenTitle">Soil Information</string>
+    <string name="soilAnalyzerScreenPh">Soil PH Scale: </string>
+    <string name="soilAnalyzerScreenTemperature">Soil Temperature: </string>
+    <string name="soilAnalyzerScreenMoisture">Soil Moisture:</string>
+    <string name="soilAnalyzerScreenButtonText">TO ANALYZE</string>
+    <string name="soilAnalyzerScreenTitleResults">Soil analysis results:</string>
+    <string name="ResultScreenTitle">Soil analysis result</string>
+    <string name="ResultScreenCardPHText">An ideal PH is a value between 6 and 8.</string>
+    <string name="ResultScreenCardPHCurrentText">Current soil PH:</string>
+    <string name="ResultScreenCardActionText">Action:</string>
+    <string name="ResultScreenCardMoistureTitle">The higher the soil temperature, the higher the soil moisture must be.</string>
+    <string name="ResultScreenCardTemperatureCurrentText">Current soil temperature:</string>
+    <string name="ResultScreenCardMoistureCurrentText">Current soil moisture:</string>
+    <string name="ResultScreenCardButtonText">RETURN</string>
+
+    <string name="ph_ok">The actual PH is the ideal.</string>
+    <string name="ph_not_ok">The actual PH is not the ideal, consider treating the soil.</string>
+    <string name="moisture_ok">Moisture versus temperature is ok.</string>
+    <string name="moistureTeperature_not_ok">Moisture versus temperature isn\'t ok,
+        and this can dry up the crops, consider watering the plantation.</string>
+    <string name="moisture_not_ok">Moisture level is low, consider watering the plantation.</string>
+
+    <string name="SettingsTitle">Settings</string>
+    <string name="ThemeSettingsText">Theme Settings</string>
+    <string name="SettingAlternativeThemeText">Alternative Theme</string>
+
+    <string name="menuHomeText">Home</string>
+
+    <string name="InfoTitle">Info</string>
+    <string name="projectInfoText">This project was designed to collect information from soil sensors, and point out land quality.
+        \n\nAt first, data entry is manual.
+        \n\nAs well as soil analysis (which is mocked), but this can be done in the future with AI and Machine Learning.</string>
+    <string name="IntegrantsText">Developers:\n\nFelipe Nunes Pereira Leite RM:88254\nGilberto Moreira Santos Junior RM:88682\nMarcio Yukio Takarabe RM:86662 \n\nClass: 3SIR - 2023</string>
+</resources>
